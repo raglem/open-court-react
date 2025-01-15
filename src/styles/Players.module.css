@@ -1,0 +1,115 @@
+.players-wrapper, .players-wrapper-small{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: 300px;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.players-wrapper-small{
+    height: fit-content;
+    box-sizing: border-box;
+}
+@media(max-width: 768px){
+    .players-wrapper, .players-wrapper-small{
+        width: 80vw;
+    }
+}
+.players-wrapper-header{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+}
+.players-wrapper-body{
+    max-height: 225px;
+    width: 100%;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+.players-wrapper-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+.footer-button{
+    height: 20px;
+    min-width: 60px;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0px 5px 0px 5px;
+    margin-right: 10px;
+    background-image: linear-gradient(rgb(244, 70, 70), rgb(149, 152, 240));
+    color: white;
+    border: 1px solid lightgray;
+}
+.footer-button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.row, .row-highlighted{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    min-height: 15px;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 5px;
+    border-image: linear-gradient(to right, rgb(244, 70, 70) 0%, rgb(149, 152, 240) 100%) 1;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    font-family: "Montserrat", serif;
+    word-break: break-word;
+}
+.row-highlighted{
+    background-color: yellow;
+}
+.row-main{
+    width: 50%;
+}
+.row-secondary{
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    min-width: 50%;
+}
+
+.assigned-players-delete{
+    color: red;
+}
+.assigned-players-swap{
+    color: black;
+    margin-right: 10px;
+}
+.assigned-players-delete:hover, .assigned-players-swap{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.assigned-players-add{
+    color: green;
+    margin-right: 10px;
+}
+.assigned-players-add:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.players-wrapper-header{
+    background-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236));
+    color: transparent;
+    background-clip: text;
+    font-weight: normal;
+}

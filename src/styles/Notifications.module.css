@@ -1,0 +1,88 @@
+.notification-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-image: linear-gradient(to right, rgb(244, 70, 70) 0%, rgb(149, 152, 240) 100%) 1;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+.notifications-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    word-break: break-word;
+}
+.notifications-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    width: 500px;
+    max-width: 80vw;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-image: linear-gradient(to right, rgb(244, 70, 70) 0%, rgb(149, 152, 240) 100%) 1;
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+}
+.notification-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 5px;
+    font-size: 14px;
+    word-break: break-word;
+    border-image: linear-gradient(to right, rgb(244, 70, 70) 0%, rgb(149, 152, 240) 100%) 1;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    color: black;
+}
+.row-main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 0px;
+    width: 80%;
+}
+.row-secondary{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+}
+.btn-view, .clear-btn{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    background-image:linear-gradient(rgb(244, 70, 70), rgb(149, 152, 240));
+    color: white;
+    white-space: nowrap;
+}
+.btn-view{
+    border-image: linear-gradient(to right, rgb(244, 70, 70) 0%, rgb(149, 152, 240) 100%) 1;
+    border-width: 0px 0px 0px 1px;
+    border-style: solid;
+}
+.clear-btn{
+    height: 20px;
+}
+.btn-view:hover, .clear-btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.notifications-header, .notification-group, .btn-view{
+    background-image: linear-gradient(rgb(236, 27, 27), rgb(79, 84, 233));
+    color: transparent;
+    background-clip: text;
+    font-style: bold;
+}

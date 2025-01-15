@@ -1,0 +1,115 @@
+.input-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 22px;
+    width: 300px;
+    border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-radius: 2px;
+    padding: 0px;
+}
+.input-wrapper .input{
+    height: 20px;
+    width: 70%;
+    border-width: 0px;
+}
+.input-wrapper .btn-join{
+    height: 22px;
+    width: 30%;
+    background-image: linear-gradient(rgb(244, 70, 70), rgb(149, 152, 240));
+    color: white;
+    border-width: 0px;
+    border-radius: 0px;
+    margin: 0px;
+}
+.input-wrapper .btn-join:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.input-full{
+    height: 20px;
+    width: 200px;
+    border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+@media(max-width: 768px){
+    .input-full{
+        min-width: 150px;
+        width: 80%;
+        border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+    }
+}
+.input-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.input-footer-btn{
+    height: 22px;
+    width: 100px;
+    background-image: linear-gradient(rgb(244, 70, 70), rgb(149, 152, 240));
+    color: white;
+    border-width: 0px;
+    border-radius: 0px;
+}
+.input-footer-btn:hover{
+
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+.input-score-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 262px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+.score-body{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.score-label{
+    font-family: 'Raleway', serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.score-input{
+    height: 14px;
+    font-size: 12px;
+    margin-right: 10px;
+    width: 40px;
+    border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.score-label{
+    background-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236));
+    color: transparent;
+    background-clip: text;
+}
+.score-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
