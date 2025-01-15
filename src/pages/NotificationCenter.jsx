@@ -106,7 +106,7 @@ function NotificationCenter(){
             setLoading(false)
         }
     }
-    return <div>
+    return <div style={{boxSizing: "border-box", padding: "0px 20px 0px 20px"}}>
         {loading && <div className={styles['full-screen-div-center']}><LoadingIndicator/></div>}
         {!loading && <div>
             <div className={styles['header']}>

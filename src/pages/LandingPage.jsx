@@ -40,7 +40,12 @@ function LandingPage(){
             setSentRequests(response.data.sent_requests);
             setReceivedRequests(response.data.received_requests);
         } catch (err) {
-            alert(err.response.data.error);
+            if(err.response.data.error){
+                alert(err.response.data.error);
+            }
+            else{
+                alert("Something went wrong. Please refresh the page")
+            }
         } finally {
             setLoading(false)
         }

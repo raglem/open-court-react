@@ -4,16 +4,14 @@
     align-items: center;
     height: 22px;
     width: 300px;
-    border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
-    border-width: 1px 1px 1px 1px;
-    border-style: solid;
     border-radius: 2px;
     padding: 0px;
 }
 .input-wrapper .input{
-    height: 20px;
+    height: 18px;
     width: 70%;
-    border-width: 0px;
+    border-image: linear-gradient(rgb(244, 23, 23), rgb(70, 75, 236)) 1;
+    border-width: 1px 1px 1px 1px;
 }
 .input-wrapper .btn-join{
     height: 22px;
